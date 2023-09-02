@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.AppCompatButton
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/button_E"
+    android:layout_width="74dp"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="16dp"
+    android:background="@drawable/ic_unclicked"
+    android:textColor="@android:color/white"
+    style="?android:attr/borderlessButtonStyle"
+    android:fontFamily="@font/berlin_bold"
+    tools:text="A"
+    android:textSize="22sp" />
