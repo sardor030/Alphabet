@@ -60,7 +60,7 @@ class EnglishAlphabetActivity : AppCompatActivity() {
         }
     }
 
-    private fun playAudio(audio: Int) {
+    private fun playAudio(audio: Int) { 
         val player = MediaPlayer.create(this, audio)
         player.start()
         player.setOnCompletionListener {

@@ -20,6 +20,8 @@ class LettersAdapter: RecyclerView.Adapter<LettersAdapter.ViewHolder>() {
 
     var onClick: (Letters) -> Unit = {}
 
+    var selectedItem = -1
+
     inner class ViewHolder(itemView: View): RecyclerView.ViewHolder(itemView){
 
         private var btnLetter: Button? = null
@@ -28,11 +30,20 @@ class LettersAdapter: RecyclerView.Adapter<LettersAdapter.ViewHolder>() {
             btnLetter = itemView.findViewById(R.id.btn_letter)
         }
 
-        fun onBind(data: Letters) {
+        @SuppressLint("NotifyDataSetChanged")
+        fun onBind(data: Letters, position: Int) {
 
             btnLetter?.text = data.letter.first().toString()
 
-            itemView.setOnClickListener { onClick.invoke(data) }
+            if (selectedItem == position){
+                btnLetter?.setBackgroundResource(R.drawable.ic_clicked)
+            }else btnLetter?.setBackgroundResource(R.drawable.ic_un_clicked)
+
+            itemView.setOnClickListener {
+                onClick.invoke(data)
+                selectedItem = position
+                notifyDataSetChanged()
+            }
         }
 
     }
@@ -44,6 +55,6 @@ class LettersAdapter: RecyclerView.Adapter<LettersAdapter.ViewHolder>() {
     override fun getItemCount(): Int = items.size
 
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
-        holder.onBind(items[position])
+        holder.onBind(items[position], position)
     }
 }
