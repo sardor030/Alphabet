@@ -31,10 +31,13 @@
         app:layout_constraintTop_toTopOf="parent"/>
 
     <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_letters"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="24dp"
         app:spanCount="4"
+        android:overScrollMode="never"
+        android:layout_marginHorizontal="8dp"
         tools:listitem="@layout/item_letter_rus"
         app:layoutManager="androidx.recyclerview.widget.GridLayoutManager"
         app:layout_constraintTop_toBottomOf="@id/tv_toolbar"/>

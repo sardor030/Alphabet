@@ -38,7 +38,7 @@ class EnglishAlphabetActivity : AppCompatActivity() {
         tvDesc = findViewById(R.id.tv_desc)
         tvTranslate = findViewById(R.id.tv_translate)
         ivDesc = findViewById(R.id.iv_desc)
-        rvLetters = findViewById(R.id.rv_litters)
+        rvLetters = findViewById(R.id.rv_letters)
     }
 
     private fun initData(){

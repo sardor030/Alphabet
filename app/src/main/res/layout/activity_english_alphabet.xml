@@ -81,7 +81,7 @@
         tools:ignore="ContentDescription" />
 
     <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/rv_litters"
+        android:id="@+id/rv_letters"
         app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
         tools:listitem="@layout/item_litter_eng"
         android:layout_width="wrap_content"

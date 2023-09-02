@@ -2,6 +2,7 @@ package com.example.alphabet.Mock
 
 import com.example.alphabet.R
 import com.example.alphabet.ui.english.list.EnglishData
+import com.example.alphabet.ui.russian.list.RussianData
 
 object AppMock {
 
@@ -32,6 +33,41 @@ object AppMock {
         EnglishData("Xx", "Xylophone", "Ксилофон", R.drawable.let_x, R.raw.eng_x),
         EnglishData("Yy", "Yoyo", "Йо Йо", R.drawable.let_y, R.raw.eng_y),
         EnglishData("Zz", "Zebra", "Зебра", R.drawable.let_z, R.raw.eng_z),
+    )
 
+    var russianLetters = arrayListOf(
+        RussianData("А а","a", R.raw.rus_1),
+        RussianData("Б б","бэ", R.raw.rus_2),
+        RussianData("В в","вэ", R.raw.rus_3),
+        RussianData("Г г","гэ", R.raw.rus_4),
+        RussianData("Д д","дэ", R.raw.rus_5),
+        RussianData("Е е","е", R.raw.rus_6),
+        RussianData("Ё ё","ё", R.raw.rus_7),
+        RussianData("Ж ж","жэ", R.raw.rus_8),
+        RussianData("З з","зэ", R.raw.rus_9),
+        RussianData("И и","и", R.raw.rus_10),
+        RussianData("Й й","и", R.raw.rus_11),
+        RussianData("К к","ка", R.raw.rus_12),
+        RussianData("Л л","эль", R.raw.rus_13),
+        RussianData("М м","эм", R.raw.rus_14),
+        RussianData("Н н","эн", R.raw.rus_15),
+        RussianData("О о","o", R.raw.rus_16),
+        RussianData("П п","пэ", R.raw.rus_17),
+        RussianData("Р р","эр", R.raw.rus_18),
+        RussianData("С с","эс", R.raw.rus_19),
+        RussianData("Т т","тэ", R.raw.rus_20),
+        RussianData("У у","у", R.raw.rus_21),
+        RussianData("Ф ф","эф", R.raw.rus_22),
+        RussianData("Х х","ха", R.raw.rus_23),
+        RussianData("Ц ц","це", R.raw.rus_24),
+        RussianData("Ч ч","че", R.raw.rus_25),
+        RussianData("Ш ш","ша", R.raw.rus_26),
+        RussianData("Щ щ","ща", R.raw.rus_27),
+        RussianData("ъ","твёр", R.raw.rus_28),
+        RussianData("ы","ы", R.raw.rus_29),
+        RussianData("ь","мяг", R.raw.rus_30),
+        RussianData("Э э","э", R.raw.rus_31),
+        RussianData("Ю ю","ю", R.raw.rus_32),
+        RussianData("Я я","я", R.raw.rus_33),
     )
 }
