@@ -2,11 +2,11 @@
 <androidx.appcompat.widget.AppCompatButton
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/button_E"
+    android:id="@+id/btn_letter"
     android:layout_width="74dp"
     android:layout_height="wrap_content"
     android:layout_marginTop="16dp"
-    android:background="@drawable/ic_unclicked"
+    android:background="@drawable/ic_un_clicked"
     android:textColor="@android:color/white"
     style="?android:attr/borderlessButtonStyle"
     android:fontFamily="@font/berlin_bold"
