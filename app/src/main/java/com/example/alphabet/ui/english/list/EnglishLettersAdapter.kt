@@ -1,4 +1,4 @@
-package com.example.alphabet.ui.english.adapter
+package com.example.alphabet.ui.english.list
 
 import android.annotation.SuppressLint
 import android.view.LayoutInflater
@@ -7,18 +7,17 @@ import android.view.ViewGroup
 import android.widget.Button
 import androidx.recyclerview.widget.RecyclerView
 import com.example.alphabet.R
-import com.example.alphabet.ui.model.Letters
 
-class LettersAdapter: RecyclerView.Adapter<LettersAdapter.ViewHolder>() {
+class EnglishLettersAdapter: RecyclerView.Adapter<EnglishLettersAdapter.ViewHolder>() {
 
-    var items: ArrayList<Letters> = arrayListOf()
+    var items: ArrayList<EnglishData> = arrayListOf()
         @SuppressLint("NotifyDataSetChanged")
         set(value) {
             field = value
             notifyDataSetChanged()
         }
 
-    var onClick: (Letters) -> Unit = {}
+    var onClick: (EnglishData) -> Unit = {}
 
     var selectedItem = -1
 
@@ -31,7 +30,7 @@ class LettersAdapter: RecyclerView.Adapter<LettersAdapter.ViewHolder>() {
         }
 
         @SuppressLint("NotifyDataSetChanged")
-        fun onBind(data: Letters, position: Int) {
+        fun onBind(data: EnglishData, position: Int) {
 
             btnLetter?.text = data.letter.first().toString()
 
@@ -49,7 +48,7 @@ class LettersAdapter: RecyclerView.Adapter<LettersAdapter.ViewHolder>() {
     }
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
-        return ViewHolder(LayoutInflater.from(parent.context).inflate(R.layout.item_litter,parent,false))
+        return ViewHolder(LayoutInflater.from(parent.context).inflate(R.layout.item_litter_eng,parent,false))
     }
 
     override fun getItemCount(): Int = items.size

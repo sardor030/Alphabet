@@ -1,6 +1,6 @@
-package com.example.alphabet.ui.model
+package com.example.alphabet.ui.english.list
 
-data class Letters(
+data class EnglishData(
     val letter: String,
     val example: String,
     val translate: String,

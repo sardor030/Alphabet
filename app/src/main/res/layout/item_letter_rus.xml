@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:background="@drawable/bg_yellow"
+    android:paddingHorizontal="12dp"
+    android:paddingVertical="6dp"
+    android:layout_margin="12dp"
+    android:gravity="center"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TextView
+        tools:text="А а"
+        android:textSize="32sp"
+        android:textColor="@color/white"
+        style="@style/textStyle.bold"/>
+
+    <TextView
+        tools:text="а"
+        android:textSize="24sp"
+        android:textColor="@color/white"
+        style="@style/textStyle"/>
+
+</androidx.appcompat.widget.LinearLayoutCompat>
