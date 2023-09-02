@@ -7,7 +7,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/bg_top"
-    tools:context=".MainActivity">
+    tools:context=".ui.main.MainActivity">
 
     <TextView
         style="@style/textStyle.bold"
@@ -16,7 +16,30 @@
         android:layout_gravity="center_horizontal"
         android:text="@string/select_alphabet"/>
 
-    <Button
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_russian"
+        android:text="@string/russian_alphabet"
+        style="@style/textStyle.bold"
+        android:textColor="@color/white"
+        android:layout_marginTop="30dp"
+        android:padding="10dp"
+        android:textAllCaps="false"
+        android:textSize="20sp"
+        android:background="@drawable/circle_green"
+        android:layout_marginHorizontal="25dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_english"
+        android:text="@string/english_alphabet"
+        android:textColor="@color/white"
+        android:layout_marginTop="30dp"
+        android:padding="10dp"
+        android:textAllCaps="false"
+        android:textSize="20sp"
+        android:background="@drawable/circle_purple"
+        android:layout_marginHorizontal="25dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"/>
 

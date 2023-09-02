@@ -1,4 +1,6 @@
 <resources>
     <string name="app_name">Alphabet</string>
     <string name="select_alphabet">Bыберите алфавит</string>
+    <string name="russian_alphabet">Русский алфавит</string>
+    <string name="english_alphabet">Aнглийский алфавит</string>
 </resources>
