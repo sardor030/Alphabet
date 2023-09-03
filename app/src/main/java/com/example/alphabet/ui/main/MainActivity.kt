@@ -12,11 +12,14 @@ class MainActivity : AppCompatActivity() {
 
     private var btnEnglish: Button? = null
     private var btnRussian: Button? = null
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+
         setContentView(R.layout.activity_main)
 
         initViews()
+
         initListeners()
     }
 

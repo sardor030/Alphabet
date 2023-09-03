@@ -1,4 +1,4 @@
-package com.example.alphabet.Mock
+package com.example.alphabet.mock
 
 import com.example.alphabet.R
 import com.example.alphabet.ui.english.list.EnglishData

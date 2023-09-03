@@ -5,7 +5,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.ImageButton
 import androidx.recyclerview.widget.RecyclerView
-import com.example.alphabet.Mock.AppMock
+import com.example.alphabet.mock.AppMock
 import com.example.alphabet.R
 import com.example.alphabet.ui.russian.list.RussianLettersAdapter
 

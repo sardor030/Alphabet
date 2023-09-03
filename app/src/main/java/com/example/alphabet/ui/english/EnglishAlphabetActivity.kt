@@ -7,7 +7,7 @@ import android.widget.ImageButton
 import android.widget.ImageView
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
-import com.example.alphabet.Mock.AppMock
+import com.example.alphabet.mock.AppMock
 import com.example.alphabet.R
 import com.example.alphabet.ui.english.list.EnglishLettersAdapter
 
@@ -21,8 +21,10 @@ class EnglishAlphabetActivity : AppCompatActivity() {
     private var rvLetters: RecyclerView? = null
 
     private var adapter = EnglishLettersAdapter()
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+
         setContentView(R.layout.activity_english_alphabet)
 
         initViews()
@@ -44,6 +46,7 @@ class EnglishAlphabetActivity : AppCompatActivity() {
     private fun initData(){
 
         adapter.items = AppMock.englishLetters
+
         adapter.onClick = {
             tvLetter?.text = it.letter
             tvDesc?.text = it.example
@@ -51,20 +54,24 @@ class EnglishAlphabetActivity : AppCompatActivity() {
             ivDesc?.setImageResource(it.image)
             playAudio(it.audio)
         }
+
         rvLetters?.adapter = adapter
     }
 
     private fun initListeners(){
+
         btnBack?.setOnClickListener {
             finish()
         }
     }
 
     private fun playAudio(audio: Int) {
-        val player = MediaPlayer.create(this, audio)
-        player.start()
-        player.setOnCompletionListener {
-            player.release()
+
+        MediaPlayer.create(this, audio).apply {
+            start()
+            setOnCompletionListener {
+                release()
+            }
         }
     }
 }
